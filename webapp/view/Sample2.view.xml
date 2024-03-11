@@ -1,0 +1,65 @@
+<mvc:View
+    controllerName="com.incture.project1.controller.Sample2"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:core="sap.ui.core"
+>
+    <Page
+        id="page"
+        title="This is the second Control (VBox,SimpleForm)"
+        showNavButton="true"
+        navButtonPress="onPress"
+    >
+        <content />
+        <VBox
+            justifyContent="Center"
+            alignItems="Center"
+        >
+            <VBox
+                class="sapUiSmallMargin"
+                width="100%"
+            >
+                <f:SimpleForm
+                    id="SimpleFormDisplay354"
+                    editable="true"
+                    layout="ResponsiveGridLayout"
+                    title="Simple Form"
+                    labelSpanXL="3"
+                    labelSpanL="3"
+                    labelSpanM="3"
+                    labelSpanS="12"
+                    emptySpanXL="4"
+                    emptySpanL="4"
+                    emptySpanM="4"
+                    emptySpanS="0"
+                    columnsXL="1"
+                    columnsL="1"
+                    columnsM="1"
+                >
+                    <f:content>
+                        <Label text="Name" />
+                        <Input id="nameText" />
+                        <Label text="Model" />
+                        <Input id="modelText" />
+                        <Label text="Country" />
+                        <Input id="countryText" />
+                    </f:content>
+                </f:SimpleForm>
+            </VBox>
+        </VBox>
+        <footer>
+            <Bar>
+                <contentRight>
+                    <Button
+                        id='submit'
+                        text="Submit"
+                        type="Accept"
+                        press="onSubmit"
+                    />
+                </contentRight>
+            </Bar>
+        </footer>
+    </Page>
+</mvc:View>

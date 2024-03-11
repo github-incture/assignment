@@ -1,0 +1,22 @@
+<mvc:View
+    controllerName="com.incture.project1.controller.Sample"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+>
+    <Page
+        id="page"
+        title="This is the First Control (Avatar)"
+    >
+        <content />
+        <VBox justifyContent="Center" alignItems="Center" height="100vh">
+            <Avatar
+                src="../img/t4.png"
+                displaySize="XL"
+                press="onPress"
+            />
+            <Text class="sapM" text="Click on the image to see the next control"/>
+        </VBox>
+    </Page>
+</mvc:View>

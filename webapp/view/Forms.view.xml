@@ -1,0 +1,71 @@
+<mvc:View
+    controllerName="com.incture.project1.controller.Home"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:core="sap.ui.core"
+>
+    <Page
+        id="page"
+        title=""
+    >
+        <content>
+            <!-- <Panel headerText="Employee Form">
+                <l:Grid vSpacing="0" width="40%">
+                    <l:content>
+                        <Label text="Employee Id" >
+                            <layoutData>
+                                <l:GridData span="L6" />
+                            </layoutData>
+                        </Label>
+                        <Input>
+                            <layoutData>
+                                <l:GridData span="L6" />
+                            </layoutData>
+                        </Input>
+                        <Label text="Employee Name">
+                            <layoutData>
+                                <l:GridData span="L6" />
+                            </layoutData>
+                        </Label>
+                        <Input>
+                            <layoutData>
+                                <l:GridData span="L6" />
+                            </layoutData>
+                        </Input>
+                        <Label text="Employee Age">
+                            <layoutData>
+                                <l:GridData span="L6" />
+                            </layoutData> 
+                        </Label>
+                        <Input>
+                            <layoutData>
+                                <l:GridData span="L6" />
+                            </layoutData>
+                        </Input>
+                    </l:content>
+                </l:Grid>
+            </Panel> -->
+            <f:SimpleForm id="sampleForm"
+            editable="true"
+			layout="ResponsiveGridLayout"
+            labelSpanXL="2"
+            emptySpanXL="6"
+            labelSpanL="2"
+            emptySpanL="6"
+            labelSpanM="12"
+            emptySpanM="0"
+            adjustLabelSpan="false"
+            >
+<Label text="Name" required="true"></Label>
+<Input ></Input>
+<Label text="Title" required="true"></Label>
+<Input ></Input>
+<Label text="Description" required="true"></Label>
+<Input ></Input>
+            </f:SimpleForm>
+        </content>
+    </Page>
+</mvc:View>

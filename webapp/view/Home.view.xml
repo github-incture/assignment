@@ -1,0 +1,429 @@
+<mvc:View
+    controllerName="com.incture.project1.controller.Home"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:core="sap.ui.core"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+    >
+        <l:VerticalLayout width="100%">
+            <HBox
+                width="100%"
+                justifyContent="SpaceBetween"
+                class="bg paddingClass"
+            >
+                <core:Icon
+                    src="sap-icon://bullet-text"
+                    class="iconSize clr sapUiTinyMarginBegin"
+                />
+                <Image
+                    src="../img/toyota.png"
+                    alt="Example picture of spotlight"
+                    height="30px"
+                />
+                <HBox>
+                    <core:Icon
+                        src="sap-icon://search"
+                        class="iconSize clr sapUiTinyMarginEnd"
+                    />
+                    <core:Icon
+                        src="sap-icon://bell"
+                        class="iconSize clr sapUiTinyMarginEnd"
+                    />
+                </HBox>
+            </HBox>
+            <Carousel
+                class="sapUiContentPadding"
+                loop="true"
+                height="30%"
+            >
+                <!-- <Image src="../img/t1.jpg" alt="Example picture of speakers" />
+		        <Image src="../img/t2.jpg" alt="Example picture of USB flash drive" />-->
+                <Image
+                    src="../img/t1.png"
+                    alt="Example picture of spotlight"
+                />
+                <Image
+                    src="../img/t4.png"
+                    alt="Example picture of spotlight"
+                />
+                <Image
+                    src="../img/test.png"
+                    alt="Example picture of spotlight"
+                />
+            </Carousel>
+            <HBox
+                justifyContent="Center"
+                class="bg"
+            >
+                <html:div class="button">Book A Service</html:div>
+            </HBox>
+            <VBox
+                class="bgRed paddingClass"
+                width="100%"
+            >
+                <!-- <HBox
+                    class="sapUiTinyMargin customPadding"
+                    justifyContent="SpaceBetween"
+                > -->
+                <l:VerticalLayout
+                    width="100%"
+                    class="gridWrapper bgRed"
+                >
+                    <l:Grid
+                        containerQuery="true"
+                        defaultSpan="XL6 L6 M6 S6"
+                    >
+                        <HBox
+                            height="40px"
+                            width="100%"
+                            class="bg sapUiResponsiveContentPadding borderClass"
+                            justifyContent="Center"
+                            alignItems="Center"
+                        >
+                            <core:Icon
+                                src="sap-icon://notes"
+                                class="clr"
+                            />
+                            <Text
+                                text="View Service Status"
+                                class="fontClass sapUiTinyMarginBegin clr fontWeightClass"
+                            />
+                        </HBox>
+                        <HBox
+                            height="40px"
+                            width="100%"
+                            class="bg sapUiResponsiveContentPadding borderClass"
+                            justifyContent="Center"
+                            alignItems="Center"
+                        >
+                            <core:Icon
+                                src="sap-icon://notes"
+                                class="clr"
+                            />
+                            <Text
+                                text="View Operations Status"
+                                class="fontClass sapUiTinyMarginBegin clr fontWeightClass"
+                            />
+                        </HBox>
+                    </l:Grid>
+                </l:VerticalLayout>
+                <!-- </HBox> -->
+                <l:VerticalLayout
+                    width="100%"
+                    class="gridWrapper bgRed"
+                >
+                    <l:Grid containerQuery="true">
+                        <VBox class="bg paddingClass borderClass ">
+                            <Text
+                                text="Recommended for you"
+                                class="fontWeightClass"
+                            />
+                            <HBox
+                                width="100%"
+                                justifyContent="SpaceBetween"
+                                class="sapUiTinyMarginBottom"
+                            >
+                                <VBox>
+                                    <Text
+                                        text="Camry"
+                                        class="clr"
+                                    />
+                                    <Text text="General job" />
+                                </VBox>
+                                <Button text="Quick Book" />
+                            </HBox>
+                            <HBox
+                                width="100%"
+                                justifyContent="SpaceBetween"
+                            >
+                                <VBox>
+                                    <Text
+                                        text="Supra"
+                                        class="clr"
+                                    />
+                                    <Text text="General job" />
+                                </VBox>
+                                <Button
+                                    type="Attention"
+                                    text="Quick Book"
+                                />
+                            </HBox>
+                        </VBox>
+                        <VBox class="bg paddingClass borderClass ">
+                            <Text
+                                text="New Releases"
+                                class="fontWeightClass"
+                            />
+                            <HBox
+                                width="100%"
+                                justifyContent="SpaceBetween"
+                                class="sapUiTinyMarginBottom"
+                            >
+                                <VBox>
+                                    <Text
+                                        text="Clerio"
+                                        class="clr"
+                                    />
+                                    <Text text="General job" />
+                                </VBox>
+                                <Button text="Quick Book" />
+                            </HBox>
+                            <HBox
+                                width="100%"
+                                justifyContent="SpaceBetween"
+                            >
+                                <VBox>
+                                    <Text
+                                        text="Mustang GT"
+                                        class="clr"
+                                    />
+                                    <Text text="General job" />
+                                </VBox>
+                                <Button text="Quick Book" />
+                            </HBox>
+                        </VBox>
+                        <VBox class="bg paddingClass borderClass ">
+                            <Text
+                                text="Trending in Market"
+                                class="fontWeightClass"
+                            />
+                            <HBox
+                                width="100%"
+                                justifyContent="SpaceBetween"
+                                class="sapUiTinyMarginBottom"
+                            >
+                                <VBox>
+                                    <Text
+                                        text="Camry"
+                                        class="clr"
+                                    />
+                                    <Text text="General job" />
+                                </VBox>
+                                <Button
+                                    type="Attention"
+                                    text="Quick Book"
+                                />
+                            </HBox>
+                            <HBox
+                                width="100%"
+                                justifyContent="SpaceBetween"
+                            >
+                                <VBox>
+                                    <Text
+                                        text="Bugati"
+                                        class="clr"
+                                    />
+                                    <Text text="General job" />
+                                </VBox>
+                                <Button text="Quick Book" />
+                            </HBox>
+                        </VBox>
+                        <VBox class="bg paddingClass borderClass ">
+                            <Text
+                                text="Top Buys"
+                                class="fontWeightClass"
+                            />
+                            <HBox
+                                width="100%"
+                                justifyContent="SpaceBetween"
+                                class="sapUiTinyMarginBottom"
+                            >
+                                <VBox>
+                                    <Text
+                                        text="Fortuner"
+                                        class="clr"
+                                    />
+                                    <Text text="General job" />
+                                </VBox>
+                                <Button text="Quick Book" />
+                            </HBox>
+                            <HBox
+                                width="100%"
+                                justifyContent="SpaceBetween"
+                            >
+                                <VBox>
+                                    <Text
+                                        text="Duster"
+                                        class="clr"
+                                    />
+                                    <Text text="General job" />
+                                </VBox>
+                                <Button text="Quick Book" />
+                            </HBox>
+                        </VBox>
+                        <VBox class="bg paddingClass borderClass ">
+                            <Text
+                                text="Trending in Market"
+                                class="fontWeightClass"
+                            />
+                            <HBox
+                                width="100%"
+                                justifyContent="SpaceBetween"
+                                class="sapUiTinyMarginBottom"
+                            >
+                                <VBox>
+                                    <Text
+                                        text="Camry"
+                                        class="clr"
+                                    />
+                                    <Text text="General job" />
+                                </VBox>
+                                <Button
+                                    type="Attention"
+                                    text="Quick Book"
+                                />
+                            </HBox>
+                            <HBox
+                                width="100%"
+                                justifyContent="SpaceBetween"
+                            >
+                                <VBox>
+                                    <Text
+                                        text="Bugati"
+                                        class="clr"
+                                    />
+                                    <Text text="General job" />
+                                </VBox>
+                                <Button text="Quick Book" />
+                            </HBox>
+                        </VBox>
+                        <VBox class="bg paddingClass borderClass ">
+                            <Text
+                                text="Recommended for you"
+                                class="fontWeightClass"
+                            />
+                            <HBox
+                                width="100%"
+                                justifyContent="SpaceBetween"
+                                class="sapUiTinyMarginBottom"
+                            >
+                                <VBox>
+                                    <Text
+                                        text="Camry"
+                                        class="clr"
+                                    />
+                                    <Text text="General job" />
+                                </VBox>
+                                <Button text="Quick Book" />
+                            </HBox>
+                            <HBox
+                                width="100%"
+                                justifyContent="SpaceBetween"
+                            >
+                                <VBox>
+                                    <Text
+                                        text="Supra"
+                                        class="clr"
+                                    />
+                                    <Text text="General job" />
+                                </VBox>
+                                <Button
+                                    type="Attention"
+                                    text="Quick Book"
+                                />
+                            </HBox>
+                        </VBox>
+                        <VBox class="bg paddingClass borderClass ">
+                            <Text
+                                text="New Releases"
+                                class="fontWeightClass"
+                            />
+                            <HBox
+                                width="100%"
+                                justifyContent="SpaceBetween"
+                                class="sapUiTinyMarginBottom"
+                            >
+                                <VBox>
+                                    <Text
+                                        text="Clerio"
+                                        class="clr"
+                                    />
+                                    <Text text="General job" />
+                                </VBox>
+                                <Button text="Quick Book" />
+                            </HBox>
+                            <HBox
+                                width="100%"
+                                justifyContent="SpaceBetween"
+                            >
+                                <VBox>
+                                    <Text
+                                        text="Mustang GT"
+                                        class="clr"
+                                    />
+                                    <Text text="General job" />
+                                </VBox>
+                                <Button text="Quick Book" />
+                            </HBox>
+                        </VBox>
+                        <VBox class="bg paddingClass borderClass ">
+                            <Text
+                                text="Recommended for you"
+                                class="fontWeightClass"
+                            />
+                            <HBox
+                                width="100%"
+                                justifyContent="SpaceBetween"
+                                class="sapUiTinyMarginBottom"
+                            >
+                                <VBox>
+                                    <Text
+                                        text="Camry"
+                                        class="clr"
+                                    />
+                                    <Text text="General job" />
+                                </VBox>
+                                <Button text="Quick Book" />
+                            </HBox>
+                            <HBox
+                                width="100%"
+                                justifyContent="SpaceBetween"
+                            >
+                                <VBox>
+                                    <Text
+                                        text="Supra"
+                                        class="clr"
+                                    />
+                                    <Text text="General job" />
+                                </VBox>
+                                <Button
+                                    type="Attention"
+                                    text="Quick Book"
+                                />
+                            </HBox>
+                        </VBox>
+                    </l:Grid>
+                </l:VerticalLayout>
+            </VBox>
+        </l:VerticalLayout>
+        <footer>
+        <Bar >
+        <contentMiddle >
+            <!-- <Button icon="sap-icon://home" text="Home" /> -->
+            <HBox alignItems="Center" class="sapUiSmallMarginEnd">
+                <core:Icon src="sap-icon://home" color="red" class="sapUiTinyMarginEnd"></core:Icon>
+                <Label text="Home"></Label>
+            </HBox>
+            <HBox alignItems="Center" class="sapUiSmallMarginEnd">
+                <core:Icon src="sap-icon://car-rental" color="red" class="sapUiTinyMarginEnd"></core:Icon>
+                <Label text="Vehicle"></Label>
+            </HBox>
+            <HBox alignItems="Center" class="sapUiSmallMarginEnd">
+                <core:Icon src="sap-icon://product" color="red" class="sapUiTinyMarginEnd"></core:Icon>
+                <Label text="Product"></Label>
+            </HBox>
+            <HBox alignItems="Center">
+                <core:Icon src="sap-icon://overflow" color="red" class="sapUiTinyMarginEnd"></core:Icon>
+                <Label text="More"></Label>
+            </HBox>
+        </contentMiddle>
+        </Bar>
+        </footer>
+    </Page>
+</mvc:View>

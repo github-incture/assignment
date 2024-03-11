@@ -1,0 +1,66 @@
+/* Enter your custom styles here */
+.button {
+    background-color: red;
+    width: 200px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    padding: 5px;
+    border-radius: 20px;
+    margin:20px 0 ;
+}
+
+.button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    opacity: 70%;
+}
+
+.container{
+    background-color: red;
+    width: 100vw;
+}
+
+.bg{
+    background-color: white;
+}
+
+.bgRed{
+    background-color: red;
+}
+
+.clr{
+    color: red;
+}
+
+.borderClass{
+    border-radius: 8px;
+}
+
+.fontClass{
+    font-size:calc(9px + 1.5vmin);
+}
+
+.iconSize{
+    font-size: 25px;
+}
+
+.fontWeightClass{
+    font-weight: bold;
+}
+
+.exampleDiv{
+    height:100px;
+    width:100px ;
+    background-color: white;
+}
+
+.paddingClass{
+    padding:3px;
+}
+
+.customPadding{
+    padding: 0 8px;
+}

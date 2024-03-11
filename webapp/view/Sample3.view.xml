@@ -1,0 +1,65 @@
+<mvc:View
+    controllerName="com.incture.project1.controller.Sample3"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:core="sap.ui.core"
+>
+    <Page
+        id="page"
+        title="This is the Final Control (Grid and List)"
+        showNavButton="true"
+        navButtonPress="onPress"
+    >
+        <content>
+            <l:VerticalLayout
+                width="100%"
+                class="gridWrapper"
+            >
+                <l:Grid
+                    containerQuery="true"
+                    defaultSpan="XL2 L4 S12"
+                >
+                    <List
+                        headerText="Products"
+                        headerLevel="H2"
+                        items="{
+			path: 'data>/'
+		}"
+                    >
+                        <StandardListItem
+                            title="{data>name}"
+                            counter="{data>count}"
+                        />
+                    </List>
+                    <List
+                        headerText="Products"
+                        headerLevel="H2"
+                        items="{
+			path: 'data>/'
+		}"
+                    >
+                        <StandardListItem
+                            title="{data>name}"
+                            counter="{data>count}"
+                        />
+                    </List>
+                    <List
+                        headerText="Products"
+                        headerLevel="H2"
+                        items="{
+			path: 'data>/'
+		}"
+                    >
+                        <StandardListItem
+                            title="{data>name}"
+                            counter="{data>count}"
+                        />
+                    </List>
+                </l:Grid>
+            </l:VerticalLayout>
+        </content>
+    </Page>
+</mvc:View>
