@@ -1,5 +1,5 @@
 <mvc:View
-    controllerName="com.incture.project1.controller.Home"
+    controllerName="com.incture.project1.controller.Forms"
     xmlns:mvc="sap.ui.core.mvc"
     displayBlock="true"
     xmlns="sap.m"
@@ -48,24 +48,36 @@
                     </l:content>
                 </l:Grid>
             </Panel> -->
-            <f:SimpleForm id="sampleForm"
-            editable="true"
-			layout="ResponsiveGridLayout"
-            labelSpanXL="2"
-            emptySpanXL="6"
-            labelSpanL="2"
-            emptySpanL="6"
-            labelSpanM="12"
-            emptySpanM="0"
-            adjustLabelSpan="false"
+            <f:SimpleForm
+                id="sampleForm"
+                editable="true"
+                layout="ResponsiveGridLayout"
+                labelSpanXL="2"
+                emptySpanXL="6"
+                labelSpanL="2"
+                emptySpanL="6"
+                labelSpanM="12"
+                emptySpanM="0"
+                adjustLabelSpan="false"
             >
-<Label text="Name" required="true"></Label>
-<Input ></Input>
-<Label text="Title" required="true"></Label>
-<Input ></Input>
-<Label text="Description" required="true"></Label>
-<Input ></Input>
+                <Label
+                    text="Name"
+                    required="true"
+                    
+                />
+                <Input id="name"/>
+                <Label
+                    text="Title"
+                    required="true"
+                />
+                <Input id="title"/>
+                <Label
+                    text="Description"
+                    required="true"
+                />
+                <Input id="desc"/>
             </f:SimpleForm>
+                <Button text="Submit" />
         </content>
     </Page>
 </mvc:View>

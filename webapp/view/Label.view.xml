@@ -1,0 +1,41 @@
+<mvc:View
+    controllerName="com.incture.project1.controller.Label"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:core="sap.ui.core"
+>
+    <Page
+        id="page"
+        title="Label Toggle"
+    >
+        <content>
+            <VBox
+                width="100vw"
+                alignItems="Center"
+            >
+                <Label
+                    class="labelFontSize"
+                    id="label"
+                    text="Hey How are you doing"
+                />
+                <Button
+                    press="onPress"
+                    text="Click to change the label's font-size"
+                />
+            </VBox>
+        </content>
+        <footer>
+            <Bar>
+                <contentRight>
+                    <Button
+                        text="Go to oData View"
+                        type="Emphasized"
+                        press="next"
+                    />
+                </contentRight>
+            </Bar>
+        </footer>
+    </Page>
+</mvc:View>

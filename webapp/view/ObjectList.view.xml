@@ -1,0 +1,52 @@
+<mvc:View
+    xmlns:layout="sap.ui.layout"
+    controllerName="com.incture.project1.controller.ObjectList"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:core="sap.ui.core"
+>
+    <Page
+        id="page"
+        title="ObjectListView"
+        showNavButton="true"
+        navButtonPress="onPress"
+    >
+        <content>
+            <layout:VerticalLayout>
+                <VBox
+                    width="100vw"
+                    alignItems="Center"
+                >
+                    <List
+                        items="{/products}"
+                        headerText="Products"
+                        width="80vw"
+                    >
+                        <ObjectListItem
+                            title="{name}"
+                            type="Active"
+                            number="{price}"
+                            press="showDialog"
+                            numberState="{= ${price} > 440? 'Warning': 'Success'}"
+                            numberUnit="{units}"
+                        >
+                        </ObjectListItem>
+                    </List>
+                </VBox>
+            </layout:VerticalLayout>
+        </content>
+        <footer>
+            <Bar>
+                <contentRight>
+                    <Button
+                        text="Go to Sales"
+                        type="Emphasized"
+                        press="sales"
+                    />
+                </contentRight>
+            </Bar>
+        </footer>
+    </Page>
+</mvc:View>

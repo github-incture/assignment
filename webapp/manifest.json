@@ -3,6 +3,15 @@
   "sap.app": {
     "id": "com.incture.project1",
     "type": "application",
+    "dataSources": {
+      "xmlDataNorthWind": {
+        "uri": "/destinations/Assignment",
+        "type": "OData",
+        "settings": {
+          "odataVersion": "2.0"
+        }
+      }
+    },
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
       "version": "0.0.1"
@@ -79,7 +88,7 @@
       "routes": [
         {
           "name": "RouteHome",
-          "pattern": "",
+          "pattern": "home",
           "target": [
             "TargetHome"
           ]
@@ -110,6 +119,41 @@
           "pattern": "forms",
           "target": [
             "TargetForms"
+          ]
+        },
+        {
+          "name": "RouteLabel",
+          "pattern": "",
+          "target": [
+            "TargetLabel"
+          ]
+        },
+        {
+          "name": "RouteBinding",
+          "pattern": "binding",
+          "target": [
+            "TargetBinding"
+          ]
+        },
+        {
+          "name": "RouteXMLBinding",
+          "pattern": "xmlbinding",
+          "target": [
+            "TargetXMLBinding"
+          ]
+        },
+        {
+          "name": "RouteObjectList",
+          "pattern": "objectlist",
+          "target": [
+            "TargetObjectList"
+          ]
+        },
+        {
+          "name": "RouteSales",
+          "pattern": "sales",
+          "target": [
+            "TargetSales"
           ]
         }
       ],
@@ -148,6 +192,41 @@
           "clearControlAggregation": false,
           "viewId": "Forms",
           "viewName": "Forms"
+        },
+        "TargetLabel":{
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Label",
+          "viewName": "Label"
+        },
+        "TargetBinding":{
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Binding",
+          "viewName": "Binding"
+        },
+        "TargetXMLBinding":{
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "XMLBinding",
+          "viewName": "XMLBinding"
+        },
+        "TargetObjectList":{
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "ObjectList",
+          "viewName": "ObjectList"
+        },
+        "TargetSales":{
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Sales",
+          "viewName": "Sales"
         }
       }
     },
