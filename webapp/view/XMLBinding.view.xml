@@ -24,13 +24,21 @@
                         headerLevel="H2"
                         width="90vw"
                         items="{
-			path: 'data>/'
-		}"
+                            path: 'data>/'
+                        }"
                     >
-                        <StandardListItem
-                            title="{data>name}"
-                            counter="{data>salary}"
-                        />
+                        <items>
+                            <ObjectListItem title="formatter demo">
+                                <firstStatus>
+                                    <ObjectStatus
+                                        text="{
+                                            data>salary
+                                        }"
+                                        state="{path: 'data>salary', formatter: '.formatter.colorChange'}"
+                                    />
+                                </firstStatus>
+                            </ObjectListItem>
+                        </items>
                     </List>
                 </VBox>
             </layout:VerticalLayout>
@@ -38,7 +46,10 @@
         <footer>
             <Bar>
                 <contentRight>
-                    <Button text="Go to xml Binding" type="Emphasized"/>
+                    <Button
+                        text="Go to xml Binding"
+                        type="Emphasized"
+                    />
                 </contentRight>
             </Bar>
         </footer>

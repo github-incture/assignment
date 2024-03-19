@@ -1,0 +1,39 @@
+<mvc:View
+    controllerName="com.incture.project1.controller.Show"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:core="sap.ui.core"
+>
+    <Page
+        id="page"
+        title="Form Dialogue"
+    >
+        <content>
+            <VBox
+                width="100vw"
+                height="80vh"
+                alignItems="Center"
+                justifyContent="Center"
+            >
+                <Button
+                    press="onPress"
+                    text="Show Form Dialog"
+                    type="Emphasized"
+                />
+            </VBox>
+        </content>
+        <footer>
+            <Bar>
+                <contentRight>
+                    <Button
+                        text="Go to Fragment View"
+                        type="Emphasized"
+                        press="next"
+                    />
+                </contentRight>
+            </Bar>
+        </footer>
+    </Page>
+</mvc:View>

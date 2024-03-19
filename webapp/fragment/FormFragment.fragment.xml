@@ -1,0 +1,44 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:f="sap.ui.layout.form"
+>
+    <Dialog
+        id="helloDialog"
+        title="Form Fragment"
+    >
+        <VBox
+            class="sapUiResponsiveContentPadding"
+            width="45vw"
+            alignItems="Center"
+        >
+            <f:SimpleForm
+                id="sampleForm"
+                editable="true"
+                layout="ResponsiveGridLayout"
+                title="Simple Form"
+                labelSpanXL="3"
+                labelSpanL="3"
+                labelSpanM="3"
+                labelSpanS="12"
+                emptySpanXL="4"
+                emptySpanL="4"
+                emptySpanM="4"
+                emptySpanS="0"
+                width="100%"
+            >
+                <Label text="Name" />
+                <Input id="nameText" type="Text" />
+                <Label text="Contact Number" />
+                <Input id="contactText" type="Number" />
+            </f:SimpleForm>
+            <Button text="Submit" press="onSubmit"/>
+        </VBox>
+        <endButton>
+            <Button
+                text="Close"
+                press="closeDialog"
+            />
+        </endButton>
+    </Dialog>
+</core:FragmentDefinition>

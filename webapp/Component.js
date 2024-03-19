@@ -6,9 +6,10 @@ sap.ui.define([
     "sap/ui/core/UIComponent",
     "sap/ui/Device",
     "com/incture/project1/model/models",
-    "sap/ui/model/odata/v2/ODataModel"
+    "sap/ui/model/odata/v2/ODataModel",
+    "sap/ui/model/json/JSONModel"
 ],
-    function (UIComponent, Device, models, ODataModel) {
+    function (UIComponent, Device, models, ODataModel, JSONModel) {
         "use strict";
 
         return UIComponent.extend("com.incture.project1.Component", {
@@ -40,6 +41,9 @@ sap.ui.define([
                         console.error("Error:", oError);
                     }
                 });
+
+                var myModel = new JSONModel("model/data.json");
+                this.setModel(myModel);
                 // enable routing
                 this.getRouter().initialize();
 

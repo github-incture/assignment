@@ -1,24 +1,11 @@
 {
-    "data": [
-        {
-          "name": "list1",
-          "count": 10
-        },
-        {
-          "name": "list1",
-          "count": 10
-        },
-        {
-          "name": "list1",
-          "count": 10
-        },
-        {
-          "name": "list1",
-          "count": 10
-        },
-        {
-          "name": "list1",
-          "count": 10
-        }
-    ]
+  "SupplierCollection": [
+    {
+      "name": "Biswajit Nayak",
+      "empid": "2002081012",
+      "designation": "Intern",
+      "place": "Bhubaneswar",
+      "dept": "Product Delivery"
+    }
+  ]
 }

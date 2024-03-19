@@ -1,0 +1,37 @@
+<mvc:View
+    controllerName="com.incture.project1.controller.FragmentView"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:core="sap.ui.core"
+>
+    <Page
+        id="page"
+        title="Fragment View"
+        showNavButton="true"
+        navButtonPress="goBack"
+    >
+        <content>
+            <VBox
+                width="100vw"
+                height="80vh"
+            >
+                <core:Fragment fragmentName="com.incture.project1.fragment.Header" />
+                <core:Fragment fragmentName="com.incture.project1.fragment.Content"/>
+            </VBox>
+        </content>
+        <footer>
+            <!-- <Bar>
+                <contentRight>
+                    <Button
+                        text="Go to Fragment View"
+                        type="Emphasized"
+                        press="next"
+                    />
+                </contentRight>
+            </Bar> -->
+            <core:Fragment fragmentName="com.incture.project1.fragment.Footer"/>
+        </footer>
+    </Page>
+</mvc:View>

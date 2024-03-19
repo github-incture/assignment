@@ -1,0 +1,38 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core">
+	<VBox class="sapUiSmallMargin">
+		<f:SimpleForm id="SimpleFormDisplay354"
+			editable="false"
+			layout="ResponsiveGridLayout"
+			title="Employee Details"
+			labelSpanXL="3"
+			labelSpanL="3"
+			labelSpanM="3"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="4"
+			emptySpanL="4"
+			emptySpanM="4"
+			emptySpanS="0"
+			columnsXL="1"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false" >
+			<f:content>
+				<Label text="{i18n>name}" />
+				<Text id="nameText" text="{/SupplierCollection/0/name}" />
+				<Label text="{i18n>empid}" />
+				<Text id="idText" text="{/SupplierCollection/0/empid}" />
+				<Label text="{i18n>desig}" />
+				<Text id="desText" text="{/SupplierCollection/0/designation}" />
+				<Label text="{i18n>place}" />
+				<Text id="placeText" text="{/SupplierCollection/0/place}" />
+				<Label text="{i18n>dept}" />
+				<Text id="deptText" text="{/SupplierCollection/0/dept}" />
+			</f:content>
+		</f:SimpleForm>
+	</VBox>
+</core:FragmentDefinition>

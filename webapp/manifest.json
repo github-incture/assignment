@@ -64,8 +64,14 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "com.incture.project1.i18n.i18n"
+          "bundleName": "com.incture.project1.i18n.i18n",
+          "supportedLocales": ["en", "ar", "fr"],
+          "fallbackLocale": "en"
         }
+      },
+      "languageModel":{
+        "type": "sap.ui.model.json.JSONModel",
+        "dataSource": "languageData"
       }
     },
     "resources": {
@@ -123,7 +129,7 @@
         },
         {
           "name": "RouteLabel",
-          "pattern": "",
+          "pattern": "label",
           "target": [
             "TargetLabel"
           ]
@@ -154,6 +160,27 @@
           "pattern": "sales",
           "target": [
             "TargetSales"
+          ]
+        },
+        {
+          "name": "RouteShow",
+          "pattern": "show",
+          "target": [
+            "TargetShow"
+          ]
+        },
+        {
+          "name": "RouteFragView",
+          "pattern": "fragview",
+          "target": [
+            "TargetFragView"
+          ]
+        },
+        {
+          "name": "RouteLanguage",
+          "pattern": "",
+          "target": [
+            "TargetLanguage"
           ]
         }
       ],
@@ -227,6 +254,27 @@
           "clearControlAggregation": false,
           "viewId": "Sales",
           "viewName": "Sales"
+        },
+        "TargetShow":{
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Show",
+          "viewName": "Show"
+        },
+        "TargetFragView":{
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "FragmentView",
+          "viewName": "FragmentView"
+        },
+        "TargetLanguage":{
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Language",
+          "viewName": "Language"
         }
       }
     },
