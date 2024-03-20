@@ -27,10 +27,11 @@
                             path: 'data>/'
                         }"
                     >
-                        <items>
+                        <!-- <items>
                             <ObjectListItem title="formatter demo">
                                 <firstStatus>
                                     <ObjectStatus
+                                    id="{data>id}"
                                         text="{
                                             data>salary
                                         }"
@@ -38,7 +39,12 @@
                                     />
                                 </firstStatus>
                             </ObjectListItem>
-                        </items>
+                        </items> -->
+                        <StandardListItem
+                            title="{data>name}"
+                            counter="{data>salary}"
+                            class="path: '{data>salary}', formatter: '.formatter.colorChange'"
+                        />
                     </List>
                 </VBox>
             </layout:VerticalLayout>

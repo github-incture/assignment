@@ -28,9 +28,9 @@
             <Bar>
                 <contentRight>
                     <Button
-                        text="Go to Fragment View"
+                        text="Show Success Message"
                         type="Emphasized"
-                        press="next"
+                        press="showSuccess"
                     />
                 </contentRight>
             </Bar>

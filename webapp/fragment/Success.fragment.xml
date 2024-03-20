@@ -1,0 +1,19 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+>
+    <Dialog>
+        <VBox
+            alignItems="Center"
+            justifyContent="Center"
+        >
+            <Text text="Success" />
+        </VBox>
+        <endButton>
+            <Button
+                text="Close"
+                press="closeDialog"
+            />
+        </endButton>
+    </Dialog>
+</core:FragmentDefinition>

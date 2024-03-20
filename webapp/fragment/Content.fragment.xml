@@ -1,5 +1,8 @@
-<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
-    <VBox>
-        <Text text="Content Fragment"/>
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+>
+    <VBox alignItems="Center" justifyContent="Center" height="70vh"> 
+        <Text text="I am the content Fragment being loaded on to the View" />
     </VBox>
 </core:FragmentDefinition>

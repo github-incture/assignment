@@ -21,6 +21,18 @@ sap.ui.define(
           }
         )
       },
+      showSuccess:function(){
+        this.dialogBox ??= this.loadFragment(
+          {
+            name: "com.incture.project1.fragment.Success"
+          }
+        )
+        this.dialogBox.then(
+          dialog => {
+            dialog.open()
+          }
+        )
+      } ,
       next: function () {
         this.getOwnerComponent().getRouter().navTo("RouteFragView")
       },

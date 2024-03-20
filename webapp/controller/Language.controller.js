@@ -24,7 +24,7 @@ sap.ui.define([
         },
 
         handleEditPress: function () {
-
+            debugger ;
             //Clone the data
             this._oSupplier = Object.assign({}, this.getView().getModel().getData().SupplierCollection[0]);
             this._toggleButtonsAndView(true);

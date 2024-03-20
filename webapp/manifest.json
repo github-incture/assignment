@@ -164,7 +164,7 @@
         },
         {
           "name": "RouteShow",
-          "pattern": "show",
+          "pattern": "",
           "target": [
             "TargetShow"
           ]
@@ -178,7 +178,7 @@
         },
         {
           "name": "RouteLanguage",
-          "pattern": "",
+          "pattern": "langauge",
           "target": [
             "TargetLanguage"
           ]
