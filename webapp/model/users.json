@@ -1,0 +1,202 @@
+{
+    "users": [
+        {
+            "id":1,
+            "name": "John Doe",
+            "department": "Engineering",
+            "gender": "Male",
+            "base-location": "Bangalore",
+            "additional-details": {
+                "emergency-contact": {
+                    "name": "Jane Doe",
+                    "number": "1234567890"
+                },
+                "home-address": {
+                    "street": "123 Main Street",
+                    "flat-no": "A1",
+                    "city": "Bangalore"
+                }
+            }
+        },
+        {
+            "id":2,
+            "name": "Jane Smith",
+            "department": "HR",
+            "gender": "Female",
+            "base-location": "Mumbai",
+            "additional-details": {
+                "emergency-contact": {
+                    "name": "John Smith",
+                    "number": "9876543210"
+                },
+                "home-address": {
+                    "street": "456 Park Avenue",
+                    "flat-no": "B2",
+                    "city": "Mumbai"
+                }
+            }
+        },
+        {
+            "id":3,
+            "name": "Alice Johnson",
+            "department": "Finance",
+            "gender": "Female",
+            "base-location": "Chennai",
+            "additional-details": {
+                "emergency-contact": {
+                    "name": "Bob Johnson",
+                    "number": "4567890123"
+                },
+                "home-address": {
+                    "street": "789 Oak Street",
+                    "flat-no": "C3",
+                    "city": "Chennai"
+                }
+            }
+        },
+        {
+            "id":4,
+            "name": "David Lee",
+            "department": "Engineering",
+            "gender": "Male",
+            "base-location": "Pune",
+            "additional-details": {
+                "emergency-contact": {
+                    "name": "Emily Lee",
+                    "number": "3210987654"
+                },
+                "home-address": {
+                    "street": "101 Pine Street",
+                    "flat-no": "D4",
+                    "city": "Pune"
+                }
+            }
+        },
+        {
+            "id":5,
+            "name": "Mary Brown",
+            "department": "HR",
+            "gender": "Female",
+            "base-location": "Hyderabad",
+            "additional-details": {
+                "emergency-contact": {
+                    "name": "Michael Brown",
+                    "number": "7890123456"
+                },
+                "home-address": {
+                    "street": "202 Elm Street",
+                    "flat-no": "E5",
+                    "city": "Hyderabad"
+                }
+            }
+        },
+        {
+            "id":6,
+            "name": "Alex Wang",
+            "department": "Engineering",
+            "gender": "Male",
+            "base-location": "Bangalore",
+            "additional-details": {
+                "emergency-contact": {
+                    "name": "Grace Wang",
+                    "number": "6543210987"
+                },
+                "home-address": {
+                    "street": "303 Maple Street",
+                    "flat-no": "F6",
+                    "city": "Bangalore"
+                }
+            }
+        },
+        {
+            "id":7,
+            "name": "Sophia Patel",
+            "department": "Finance",
+            "gender": "Female",
+            "base-location": "Mumbai",
+            "additional-details": {
+                "emergency-contact": {
+                    "name": "Aiden Patel",
+                    "number": "2345678901"
+                },
+                "home-address": {
+                    "street": "404 Oakwood Avenue",
+                    "flat-no": "G7",
+                    "city": "Mumbai"
+                }
+            }
+        },
+        {
+            "id":8,
+            "name": "Ethan Kim",
+            "department": "Engineering",
+            "gender": "Male",
+            "base-location": "Chennai",
+            "additional-details": {
+                "emergency-contact": {
+                    "name": "Isabella Kim",
+                    "number": "8901234567"
+                },
+                "home-address": {
+                    "street": "505 Cedar Lane",
+                    "flat-no": "H8",
+                    "city": "Chennai"
+                }
+            }
+        },
+        {
+            "id":9,
+            "name": "Ava Kumar",
+            "department": "HR",
+            "gender": "Female",
+            "base-location": "Pune",
+            "additional-details": {
+                "emergency-contact": {
+                    "name": "Liam Kumar",
+                    "number": "3456789012"
+                },
+                "home-address": {
+                    "street": "606 Pinecrest Drive",
+                    "flat-no": "I9",
+                    "city": "Pune"
+                }
+            }
+        },
+        {
+            "id":10,
+            "name": "Oliver Gupta",
+            "department": "Finance",
+            "gender": "Male",
+            "base-location": "Hyderabad",
+            "additional-details": {
+                "emergency-contact": {
+                    "name": "Charlotte Gupta",
+                    "number": "0123456789"
+                },
+                "home-address": {
+                    "street": "707 Elmwood Court",
+                    "flat-no": "J10",
+                    "city": "Hyderabad"
+                }
+            }
+        },
+        {
+            "id":11,
+            "name": "Emma Reddy",
+            "department": "Engineering",
+            "gender": "Female",
+            "base-location": "Bangalore",
+            "additional-details": {
+                "emergency-contact": {
+                    "name": "Noah Reddy",
+                    "number": "7890123456"
+                },
+                "home-address": {
+                    "street": "606 Pinecrest Drive",
+                    "flat-no": "I9",
+                    "city": "Pune"
+                }
+            }
+        }
+        ]
+    }

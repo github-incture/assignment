@@ -164,7 +164,7 @@
         },
         {
           "name": "RouteShow",
-          "pattern": "",
+          "pattern": "show",
           "target": [
             "TargetShow"
           ]
@@ -182,9 +182,65 @@
           "target": [
             "TargetLanguage"
           ]
+        } ,
+        {
+          "name": "RouteUserDetails",
+          "pattern": "userDetails/{userId}",
+          "target": [
+            "TargetUserDetails"
+          ]
+        },
+        {
+          "name": "RouteUsers",
+          "pattern": "users",
+          "target": [
+            "TargetUsers"
+          ]
+        },
+        {
+          "name": "RouteLogin",
+          "pattern": "",
+          "target": [
+            "TargetLogin"
+          ]
+        },
+        {
+          "name": "RouteSplit",
+          "pattern": "split/{username}",
+          "target": [
+            "TargetSplit"
+          ]
         }
       ],
       "targets": {
+        "TargetSplit": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Split",
+          "viewName": "Split"
+        },
+        "TargetLogin": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Login",
+          "viewName": "Login"
+        },
+        "TargetUsers": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Users",
+          "viewName": "Users"
+        },
+        "TargetUserDetails": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "UserDetails",
+          "viewName": "UserDetails"
+        },
         "TargetHome": {
           "viewType": "XML",
           "transition": "slide",

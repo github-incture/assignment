@@ -1,0 +1,58 @@
+<mvc:View
+    controllerName="com.incture.project1.controller.UserDetails"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:core="sap.ui.core"
+>
+    <Page title="User Details">
+        <content>
+            <ObjectHeader title="{userDetails>/name}" />
+            <VBox>
+                <HBox>
+                    <Label text="Department :" />
+                    <Text text="{userDetails>/department}" />
+                </HBox>
+                <HBox>
+                    <Label text="Gender    :" />
+                    <Text text="{userDetails>/gender}" />
+                </HBox>
+                <HBox>
+                    <Label text="Base Location :" />
+                    <Text text="{userDetails>/base-location}" />
+                </HBox>
+                <HBox>
+                    <Label text="Emergency Contact :" />
+                    <Text
+                        text="{userDetails>/additional-details/emergency-contact/name}"
+                    />
+                </HBox>
+                <HBox>
+                    <Label text="Emergency Contact Number :" />
+                    <Text
+                        text="{userDetails>/additional-details/emergency-contact/number}"
+                    />
+                </HBox>
+                <HBox>
+                    <Label text="Home Address Street :" />
+                    <Text
+                        text="{userDetails>/additional-details/home-address/street}"
+                    />
+                </HBox>
+                <HBox>
+                    <Label text="Home Address Flat No :" />
+                    <Text
+                        text="{userDetails>/additional-details/home-address/flat-no}"
+                    />
+                </HBox>
+                <HBox>
+                    <Label text="Home Address City :" />
+                    <Text
+                        text="{userDetails>/additional-details/home-address/city}"
+                    />
+                </HBox>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>

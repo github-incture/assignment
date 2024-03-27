@@ -28,22 +28,25 @@ sap.ui.define([
                 var sDestination = this.getManifestEntry("/sap.app/dataSources/xmlDataNorthWind/uri");
 
                 // create and set the OData model with the destination URI
-                var oModel = new ODataModel(sDestination);
+                // var oModel = new ODataModel(sDestination);
 
-                this.setModel(oModel);
+                // this.setModel(oModel);
 
                 // read data from the model to test retrieval
-                oModel.read("/service", {
-                    success: function (oData, oResponse) {
-                        console.log("Data Retrieved:", oData);
-                    },
-                    error: function (oError) {
-                        console.error("Error:", oError);
-                    }
-                });
+                // oModel.read("/service", {
+                //     success: function (oData, oResponse) {
+                //         console.log("Data Retrieved:", oData);
+                //     },
+                //     error: function (oError) {
+                //         console.error("Error:", oError);
+                //     }
+                // });
 
                 var myModel = new JSONModel("model/data.json");
                 this.setModel(myModel);
+
+                var oModel = new sap.ui.model.json.JSONModel("model/users.json");
+                this.setModel(oModel);
                 // enable routing
                 this.getRouter().initialize();
 

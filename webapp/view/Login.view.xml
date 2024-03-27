@@ -1,0 +1,15 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.f" controllerName="com.incture.project1.controller.Login">
+    <Page title="Login">
+        <content >
+            <f:Card class="sapUiTinyMargin" width="300px">
+                <f:content>
+                    <VBox alignItems="Center" justifyContent="Center" height="100%" >
+                        <Input class="sapUiSmallMargin" placeholder="Username" id="usernameInput" required="true" />
+                        <Input class="sapUiSmallMargin" placeholder="Password" id="passwordInput" type="Password" required="true" />
+                        <Button text="Login" press="onLogin" />
+                    </VBox>
+                </f:content>
+            </f:Card>
+        </content>
+    </Page>
+</mvc:View>

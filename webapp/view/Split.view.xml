@@ -1,0 +1,78 @@
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+    controllerName="com.incture.project1.controller.Split"
+>
+    <Page >
+        <content>
+            <SplitContainer id="SplitContDemo">
+                <detailPages>
+                    <Page
+                        id="detail"
+                        title="Detail 1"
+                        backgroundDesign="Solid"
+                    >
+                        <Label
+                            text="Detail page 1"
+                            class="sapUiTinyMarginEnd"
+                        />
+                    </Page>
+                    <Page
+                        id="detailDetail"
+                        title="Detail Detail"
+                        backgroundDesign="Solid"
+                    >
+                        <VBox class="sapUiSmallMargin">
+                            <Label text="This is Detail Page 2" />
+                        </VBox>
+                    </Page>
+                    <Page
+                        id="detail2"
+                        title="Detail 3 Page"
+                        backgroundDesign="Solid"
+                    >
+                        <Label text="This is Detail Page 3" />
+                        <Input />
+                    </Page>
+                </detailPages>
+                <masterPages>
+                    <Page
+                        id="master2"
+                        title="Welcome, {welcomeModel>/username}!"
+                        backgroundDesign="List"
+                    >
+                        <List itemPress=".onListItemPress">
+                            <StandardListItem
+                                title="To Detail 1"
+                                type="Active"
+                                custom:to="detail"
+                            />
+                            <StandardListItem
+                                title="To Detail 2"
+                                type="Active"
+                                custom:to="detailDetail"
+                            />
+                            <StandardListItem
+                                title="To Detail 3"
+                                type="Active"
+                                custom:to="detail2"
+                            />
+                        </List>
+                        <footer>
+                            <Bar>
+                                <contentMiddle>
+                                    <Button
+                                        text="Logout"
+                                        type="Negative"
+                                        press="onLogout"
+                                    />
+                                </contentMiddle>
+                            </Bar>
+                        </footer>
+                    </Page>
+                </masterPages>
+            </SplitContainer>
+        </content>
+    </Page>
+</mvc:View>

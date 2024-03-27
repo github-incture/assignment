@@ -1,0 +1,29 @@
+<mvc:View
+    controllerName="com.incture.project1.controller.Users"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:core="sap.ui.core"
+>
+    <Page
+        id="page"
+        title="Users List View"
+    >
+        <content>
+            <List
+                items="{path: '/users'}"
+                itemPress=".onSelectUser"
+            >
+                <items>
+                    <ObjectListItem
+                        title="{name}"
+                        type="Active"
+                        intro="{department}"
+                        number="{= 'Gender: ' + ${gender} + ', Location: ' + ${base-location} }"
+                    />
+                </items>
+            </List>
+        </content>
+    </Page>
+</mvc:View>
